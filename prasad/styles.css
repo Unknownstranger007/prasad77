@@ -1,0 +1,121 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure body takes full height */
+}
+
+/* Ensure html also takes 100% height */
+html {
+    height: 100%;
+}
+
+/* Home Section Styling */
+#home {
+    background-image: url('images/pexels-padrinan-2120614.jpg'); /* Adjust the path for your image */
+    background-size: cover;
+    background-position: center center;
+    height: 100%; /* Full height for the page */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    color: white;
+    overflow: hidden;
+    min-height: 100vh; /* Ensure it takes the full viewport height */
+}
+
+/* Content Section */
+.content {
+    padding: 40px;
+    text-align: center;
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Heading with gradient color */
+h1 {
+    font-size: 3.5em;
+    background: linear-gradient(to right, #f6ff00, #f70404, #ff00dd, #00ffff); /* Multicolor Gradient */
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin: 20px 0;
+    color: #eeff00; /* Yellow text color */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Love Paragraph Styling */
+.love-paragraph {
+    font-size: 1.2em;
+    line-height: 1.8;
+    font-style: italic;
+    margin: 20px 0;
+    color: #ffe600; /* Pinkish-yellow color */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.love-paragraph strong {
+    font-weight: bold;
+    color: #fd57c5; /* Slightly different pink for emphasis */
+}
+
+/* Navigation Styling */
+nav a {
+    display: inline-block;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #ff00ea; /* Bright pink background */
+    border-radius: 25px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav a:hover {
+    background-color: #ff66cc; /* Light pink on hover */
+    transform: scale(1.05);
+}
+
+/* Animation for Fade-In Effect */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em; /* Smaller font size for h1 */
+    }
+
+    p, .love-paragraph {
+        font-size: 1em; /* Slightly smaller font for paragraphs */
+    }
+
+    nav a {
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+
+    .content {
+        margin: 15px; /* Reduced margin for smaller screens */
+        padding: 20px; /* Adjust padding for smaller devices */
+    }
+}
